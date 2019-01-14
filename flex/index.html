@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                header
+                <p class="header-p">link</p>
+                <p class="header-p">link</p>
+            </div>
+            <div class="header-right">
+                <input type="search" class="header-search" />
+                <button>search</button>
+            </div>
+        </div>
+        
+        <div class="main">
+                
+            <section class="section">
+                <div class="section-item">
+                    <h2>Flex Layout</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img src="#" alt="">
+                </div>
+                <div class="section-item">
+                    <h2>Flex Layout</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img src="#" alt="">
+                </div>
+                <div class="section-item">
+                    <h2>Flex Layout</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img src="#" alt="">
+                </div>
+                <div class="section-item">
+                    <h2>Flex Layout</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img src="#" alt="">
+                </div>
+                    
+            </section>
+            
+            <aside class="sidebar">Sidebar</aside>
+        </div>
+
+        <div class="footer">footer</div>
+        <div id="scrollup" onclick="returnTop()" class="position">Return Top</div>
+    </div>
+</body>
+<script>
+//监听滚动条
+window.onscroll= function(){
+
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    var scrollup = document.getElementById('scrollup');
+
+    if(t>=1){
+        scrollup.style.display="block";
+    }else{          //恢复正常
+        scrollup.style.display="none";
+    }
+}
+function returnTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+</html>
